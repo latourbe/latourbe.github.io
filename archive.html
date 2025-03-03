@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<head>
+    <title>La Tourbe #05</title>
+    <link rel="icon" href="favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="./script.js"> </script>
+</head>
+
+ <!-- Partie visible du site -->
+<body style="height:100vh;margin:0px;background-image: url(archive.png);background-size: cover;">
+
+    <table style="margin-top: 2vh ; width:100% ;font-size: 20px;flex: 0 0; height: 7vh;">
+        <tr>
+            <th class="border"></th>
+            <th style="width:auto"><a class="lien" href="index.html">Accueil</a></th>
+            <th style="width:auto"><a class="lien" href="archive.html">Archives</a></th>
+            <th style="width:auto"><a class="lien" href="tourbiers.html">Tourbinoscope</a></th>
+            <th style="width:auto"><a class="lien" href="contact.html">Contact</a></th>
+            <th class="border"></th>
+        </tr>
+    </table> 
+
+    <div class="outercontainer_archive" id="scrl1">
+      <div class="innercontainer_archive">
+        <div class="item0"><h1>La Tourbe numérique</h1>
+            <h2>2020 - 2020<br>Sortie mensuelle<br><br>Diffusion uniquement numérique pour cause de pandémie mondiale</div>
+        <div class="item_"><a href="1/index.html"><img src="0.1/__Page_00.png"></a></div>	
+        <div class="item_"><a href="1/index.html"><img src="0.2/__Page_00.png"></a></div>	
+        <div class="item_"><a href="1/index.html"><img src="0.3/__Page_00.png"></a></div>	
+        <div class="item_"><a href="1/index.html"><img src="0.4/__Page_00.png"></a></div>	
+        <div class="item_"><a href="1/index.html"><img src="0.5/__Page_00.png"></a></div>	
+        <div class="item0"><h1>La Tourbe papier</h1>
+            <h2>2022 - en cours<br>Sortie bimensuelle (environ)<br><br>Prix de vente 4€<br>Disponible dans les librairies suivantes:</h2>
+            <h6>La Friche (Paros 6e), Les reveurs de vent (Paris 11e)</h6></div>
+        <div class="item"><a href="1/index.html"><img src="1/__Page_01.png"></a></div>
+        <div class="item"><a href="2/index.html"><img src="2/__Page_01.png"></a></div>
+        <div class="item"><a href="3/index.html"><img src="3/__Page_01.png"></a></div>
+        <div class="item"><a href="4/index.html"><img src="4/__Page_01.png"></a></div>
+        <div class="item"><a href="5/index.html"><img src="5/__Page_01.png"></a></div>
+        <div class="item"><a href="6/index.html"><img src="6/__Page_01.png"></a></div>
+      </div>
+    </div>
+
+
+    <script>
+      window.onload = () => {
+        document.onwheel = customScrollFunction;
+
+        function customScrollFunction(event){
+    
+    let deltaY = event.deltaY;
+    let deltaYSign = Math.sign(deltaY);
+    
+    if(deltaYSign==-1){
+        document.getElementById("scrl1").scrollBy({
+            top: 0,
+            left: -169,
+            behavior: 'auto'
+          });
+
+    }else{ 
+        document.getElementById("scrl1").scrollBy({
+            top: 0,
+            left: 169,
+            behavior: 'auto'
+        });
+    }
+
+}
+      }
+    </script>
+
+</body>
+</html>
