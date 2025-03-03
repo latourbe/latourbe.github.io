@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<head>
+    <title>La Tourbe #01</title>
+    <link rel="icon" href="../favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+    <link href="../style.css" type="text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="./script.js"> </script>
+</head>
+
+ <!-- Partie visible du site -->
+<body style="height:100vh;margin:0px;">
+
+    <table style="margin-top: 1.5vh ; width:100% ;font-size: 20px;flex: 0 0; height: 5vh;">
+        <tr>
+            <th class="border"></th>
+            <th style="width:auto"><a class="lien" href="../index.html">Accueil</a></th>
+            <th style="width:auto"><a class="lien" href="../archive.html">Archives</a></th>
+            <th style="width:auto"><a class="lien" href="../tourbiers.html">Tourbinoscope</a></th>
+            <th style="width:auto"><a class="lien" href="../contact.html">Contact</a></th>
+            <th class="border"></th>
+        </tr>
+    </table> 
+
+    <div class="outercontainer" id="scrl1">
+      <div class="innercontainer">
+        <div class="item0"><h1>La Tourbe #01</h1>
+            <h2>Mode d'emploi</h2>
+            <h6>février 2023<br>tiré à 200 exemplaires</h6></div>
+       <div class="item2"><img src="Page (1).png"></div>
+        <div class="item1"><img src="Page (2).png"></div>
+        <div class="item2"><img src="Page (3).png"></div>
+        <div class="item1"><img src="Page (4).png"></div>
+        <div class="item2"><img src="Page (5).png"></div>
+        <div class="item1"><img src="Page (6).png"></div>
+        <div class="item2"><img src="Page (7).png"></div>
+        <div class="item1"><img src="Page (8).png"></div>
+        <div class="item2"><img src="Page (9).png"></div>
+        <div class="item1"><img src="Page (10).png"></div>
+        <div class="item2"><img src="Page (11).png"></div>
+        <div class="item1"><img src="Page (12).png"></div>
+        <div class="item2"><img src="Page (13).png"></div>
+        <div class="item1"><img src="Page (14).png"></div>
+        <div class="item2"><img src="Page (15).png"></div>
+        <div class="item1"><img src="Page (16).png"></div>
+        <div class="item2"><img src="Page (17).png"></div>
+        <div class="item1"><img src="Page (18).png"></div>
+        <div class="item2"><img src="Page (19).png"></div>
+        <div class="item1"><img src="Page (20).png"></div>
+        <div class="item2"><img src="Page (21).png"></div>
+        <div class="item1"><img src="Page (22).png"></div>
+        <div class="item2"><img src="Page (23).png"></div>
+        <div class="item1"><img src="Page (24).png"></div>
+        <div class="item2"><img src="Page (25).png"></div>
+        <div class="item1"><img src="Page (26).png"></div>
+        <div class="item2"><img src="Page (27).png"></div>
+        <div class="item1"><img src="Page (28).png"></div>
+        <div class="item2"><img src="Page (29).png"></div>
+        <div class="item1"><img src="Page (30).png"></div>
+        <div class="item2"><img src="Page (31).png"></div>
+        <div class="item1"><img src="Page (32).png"></div>
+        <div class="item2"><img src="Page (33).png"></div>
+        <div class="item1"><img src="Page (34).png"></div>
+        <div class="item2"><img src="Page (35).png"></div>
+        <div class="item1"><img src="Page (36).png"></div>
+        <div class="item2"><img src="Page (37).png"></div>
+        <div class="item1"><img src="Page (38).png"></div>
+        <div class="item2"><img src="Page (39).png"></div>
+        <div class="item1"><img src="Page (40).png"></div>
+        <div class="item2"><img src="Page (41).png"></div>
+        <div class="item1"><img src="Page (42).png"></div>
+        <div class="item2"><img src="Page (43).png"></div>
+        <div class="item1"><img src="Page (44).png"></div>
+        <div class="item2"><img src="Page (45).png"></div>
+        <div class="item1"><img src="Page (46).png"></div>
+        <div class="item2"><img src="Page (47).png"></div>
+        <div class="item1"><img src="Page (48).png"></div>
+      </div>
+    </div>
+
+    <div><table style="width:100%;height: 5vh;">
+        <tr style="height:50px">
+            <th class="border"></th>
+            <th style="width:auto"><a class="lien" href="../0.5/index.html">← #0.5</a></th>
+            <th class="border"></th>
+            <th style="width:auto"><h3>#01 - Mode d'emploi</h3></th>
+            <th class="border"></th>
+            <th style="width:auto"><a class="lien" href="../2/index.html">#02 →</a></th>
+            <th class="border"></th>
+        </tr>
+    </div></table> 
+
+    <script>
+      window.onload = () => {
+        document.onwheel = customScrollFunction;
+
+        function customScrollFunction(event){
+    
+    let deltaY = event.deltaY;
+    let deltaYSign = Math.sign(deltaY);
+    
+    if(deltaYSign==-1){
+        document.getElementById("scrl1").scrollBy({
+            top: 0,
+            left: -169,
+            behavior: 'auto'
+          });
+
+    }else{ 
+        document.getElementById("scrl1").scrollBy({
+            top: 0,
+            left: 169,
+            behavior: 'auto'
+        });
+    }
+
+}
+      }
+    </script>
+
+</body>
+</html>
