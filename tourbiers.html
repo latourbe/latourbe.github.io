@@ -9,6 +9,19 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <script>
+            function startAlternatingText(elementId, textArray, interval) {
+                let index = 0;
+                setInterval(() => {
+                    document.getElementById(elementId).innerHTML = textArray[index];
+                    index = (index + 1) % textArray.length;
+                }, interval);
+            }
+        
+            startAlternatingText("dynamic-sub-head", ["[[]_ &nbsp∖(•‿•)", "[[]_ &nbsp(•‿•)∕","[[]_ &nbsp∖(•‿•)", "[[]_ &nbsp(•‿=)∕",], 500);
+            startAlternatingText("dynamic-sub-head1", ["≣≣≣≣ &nbsp ) )>", "≣≣≣≣ <( (",], 500);
+            startAlternatingText("dynamic-sub-head2", ["| &nbsp | &nbsp |∕ ", "| &nbsp | &nbsp ∖|"], 500);
+        </script>
     </head>
 
  <!-- Partie visible du site -->
@@ -43,14 +56,15 @@
                     <div class="pp"><img src="trombi/alexandre.png"></div>
                     <div class="txt"><h5>Alexandre</h5><h6>Congélateur 284L<br>Eco A++ et dégivrage manuel - 41 dB 128.5x86x72.5cm Congélation 17kg/24h Le + : 3 jours d'autonomie en cas de coupure de courant ! Bac à glaçons inclus.
                     <br><br><i>A participé aux numéros :</i>
-                    <a href="0/index.html">#00</a>
-                    <a href="1/index.html">#01</a>
-                    <a href="2/index.html">#02</a>
-                    <a href="3/index.html">#03</a>
-                    <a href="4/index.html">#04</a>
-                    <a href="5/index.html">#05</a>
-                    <a href="6/index.html">#06</a></div></h6>
+                    <a href="0.3/index.html">#0.3</a></div></h6>
                 </div>
+                
+                <div class="tourbier">
+                    <div class="pp"><img src="trombi/amodebe.png"></div>
+                    <div class="txt"><h5>Amodebe</h5><h6>Opérateur de saisie en Photograhpie non Contractuelle.
+                    <br><br><i>A participé aux numéros :</i>
+                    <a href="0.1/index.html">#0.1</a></div></h6>
+                </div>                
                 
                 <div class="tourbier">
                     <div class="pp"><img src="trombi/angela.png"></div>
@@ -70,14 +84,18 @@
                     <div class="pp"><img src="trombi/arthur.png"></div>
                     <div class="txt"><h5>Arthur</h5><h6>Éternel insatisfait<br>Tente de percer les mystères de l'univers en regardant voler les hirondelles, quand il ne danse pas la samba.
                     <br><br><i>A participé aux numéros :</i>
-                    <a href="0/index.html">#00</a></div></h6>
+                    <a href="0.2/index.html">#0.2</a>
+                    <a href="0.3/index.html">#0.3</a></div></h6>
                 </div> 
 
                 <div class="tourbier">
                     <div class="pp"><img src="trombi/bonero.png"></div>
                     <div class="txt"><h5>el Bonero</h5><h6>Hédoniste<br>Recherché au Brésil pour cause de mauvais goût, il est contraint de fuir dans une île inconnue du Pacifique, où il prend part à la vie communautaire d'une tribu libertine.
                     <br><br><i>A participé aux numéros :</i>
-                    <a href="0/index.html">#00</a>
+                    <a href="0.1/index.html">#0.1</a>
+                    <a href="0.2/index.html">#0.2</a>
+                    <a href="0.4/index.html">#0.4</a>
+                    <a href="0.5/index.html">#0.5</a>
                     <a href="1/index.html">#01</a>
                     <a href="2/index.html">#02</a></div></h6>
                 </div> 
@@ -93,7 +111,9 @@
                     <div class="pp"><img src="trombi/co.png"></div>
                     <div class="txt"><h5>Co</h5><h6>Docteur en Crudités, Ex-Ministre de la Terre<br>Dévoue sa pratique professionnelle à ce qui n'est pas cuit, c'est-à-dire les sushis et le pisé.
                     <br><br><i>A participé aux numéros :</i>
-                    <a href="0/index.html">#00</a></div></h6>
+                    <a href="0.1/index.html">#0.1</a>
+                    <a href="0.2/index.html">#0.2</a>
+                    <a href="0.3/index.html">#0.3</a></div></h6>
                 </div> 
                            
                 <div class="tourbier">
@@ -110,7 +130,10 @@
                     <div class="pp"><img src="trombi/cristiano.png"></div>
                     <div class="txt"><h5>Cristiano</h5><h6>Manifestation<br>Metteur en scène de la vraie vie, architecte exploité dans la vraie vie.
                     <br><br><i>A participé aux numéros :</i>
-                    <a href="0/index.html">#00</a>
+                    <a href="0.1/index.html">#0.1</a>
+                    <a href="0.2/index.html">#0.2</a>
+                    <a href="0.4/index.html">#0.4</a>
+                    <a href="0.5/index.html">#0.5</a>
                     <a href="1/index.html">#01</a>
                     <a href="2/index.html">#02</a>
                     <a href="3/index.html">#03</a>
@@ -136,10 +159,17 @@
                 </div>
 
                 <div class="tourbier">
+                    <div class="pp"><img src="trombi/guy.png"></div>
+                    <div class="txt"><h5>Guy Bôle</h5><h6>Stéréotype<br>Pessimiste convaincu à l'appétit débordant.
+                    <br><br><i>A participé aux numéros :</i>
+                    <a href="0.2/index.html">#0.2</a></div></h6>
+                </div> 
+
+                <div class="tourbier">
                     <div class="pp"><img src="trombi/hannah.png"></div>
                     <div class="txt"><h5>Hannah</h5><h6>Palondrome organique<br>Forte de sa longue traversée du désert de 2020, elle décide d'enquêter sur nos moyens de survie par la recherche de techniques de go et l'engagement à relater les vies rêvées de son existence strictement typographique.
                     <br><br><i>A participé aux numéros :</i>
-                    <a href="0/index.html">#00</a></div></h6>
+                    <a href="0.1/index.html">#0.1</a></div></h6>
                 </div>
 
                 <div class="tourbier">
@@ -151,8 +181,14 @@
                 
                 <div class="tourbier">
                     <div class="pp"><img src="trombi/hugo.png"></div>
-                    <div class="txt"><h5>Hugo</h5><h6>A codé ce site<br>A fait des dessins<br>Puis a vu que cela était bon.
-                    <br><br><i>A participé aux numéros :</i>
+                    <div class="txt"><h5>Hugo</h5>
+                    <h6>Bonne chance pour imprimer ça la team papier :</h6>
+                    <div style="margin: 0;text-align: left;">
+                        <h6 id="dynamic-sub-head" style="margin: 2px;">[[]_ &nbsp(•‿•)∕</h6>
+                        <h6 id="dynamic-sub-head1" style="margin: 2px;">≣≣≣≣ <( (</h6>
+                        <h6 id="dynamic-sub-head2" style="margin: 2px;">| &nbsp | &nbsp ∖|</h6>  
+                    </div>
+                    <h6><i>A participé aux numéros :</i>
                     <a href="1/index.html">#01</a>
                     <a href="2/index.html">#02</a>
                     <a href="3/index.html">#03</a>
@@ -162,10 +198,21 @@
                 </div>
 
                 <div class="tourbier">
+                    <div class="pp"><img src="trombi/ines.png"></div>
+                    <div class="txt"><h5>Inès</h5><h6>Voyageuse impénitente<br>Elle continue de chercher...
+                    <br><br><i>A participé aux numéros :</i>
+                    <a href="0.3/index.html">#0.3</a></div></h6>
+                </div>
+
+                <div class="tourbier">
                     <div class="pp"><img src="trombi/jnsx.png"></div>
                     <div class="txt"><h5>JNSX</h5><h6>Nouvelle espèce de primate<br>Du genre Homo Sapiens Sapiens, issu d'Homo Erektus<br>Actuellement président du fan club ardennais de Thierry La Fronde.
                     <br><br><i>A participé aux numéros :</i>
-                    <a href="0/index.html">#00</a>
+                    <a href="0.1/index.html">#0.1</a>
+                    <a href="0.2/index.html">#0.2</a>
+                    <a href="0.3/index.html">#0.3</a>
+                    <a href="0.4/index.html">#0.4</a>
+                    <a href="0.5/index.html">#0.5</a>
                     <a href="1/index.html">#01</a>
                     <a href="2/index.html">#02</a>
                     <a href="4/index.html">#04</a>
@@ -195,10 +242,18 @@
                 </div>
 
                 <div class="tourbier">
+                    <div class="pp"><img src="trombi/loris.png"></div>
+                    <div class="txt"><h5>Loris L. Perillo</h5><h6>Maitre boulanger<br>Entre un levain de pain et un autre, il raconte des histoires d'amour et de mort à ses clients.
+                    <br><br><i>A participé aux numéros :</i>
+                    <a href="0.2/index.html">#0.2</a></div></h6>
+                </div>
+
+                <div class="tourbier">
                     <div class="pp"><img src="trombi/luc.png"></div>
                     <div class="txt"><h5>Luc</h5><h6>Artisan bricoleur<br>Chercheur en tohu-bohu, improvisateur cartésien.
                     <br><br><i>A participé aux numéros :</i>
-                    <a href="0/index.html">#00</a></div></h6>
+                    <a href="0.2/index.html">#0.2</a>
+                    <a href="0.4/index.html">#0.4</a></div></h6>
                 </div>
 
                 <div class="tourbier">
@@ -213,7 +268,11 @@
                     <div class="pp"><img src="trombi/madeleine.png"></div>
                     <div class="txt"><h5>Madeleine</h5><h6>Interrompue dans son ascèse idéologique par un voyage temporel dans les années 70, elle se consacre désormais à devenir un personnage fictif.
                     <br><br><i>A participé aux numéros :</i>
-                    <a href="0/index.html">#00</a>
+                    <a href="0.1/index.html">#0.1</a>
+                    <a href="0.2/index.html">#0.2</a>
+                    <a href="0.3/index.html">#0.3</a>
+                    <a href="0.4/index.html">#0.4</a>
+                    <a href="0.5/index.html">#0.5</a>
                     <a href="1/index.html">#01</a>
                     <a href="2/index.html">#02</a>
                     <a href="3/index.html">#03</a>
@@ -226,7 +285,7 @@
                     <div class="pp"><img src="trombi/manon.png"></div>
                     <div class="txt" style="-moz-transform: scaleX(-1); -o-transform: scaleX(-1); -webkit-transform: scaleX(-1); transform: scaleX(-1); filter: FlipH; -ms-filter: FlipH"><h5 >Manon</h5><h6>Architecte<br>Elle croit au rire thérapeutique et à une vie après la mort - si la planète ne crêve pas avant.
                     <br><br><i>A participé aux numéros :</i>
-                    <a href="0/index.html">#00</a>
+                    <a href="0.3/index.html">#0.3</a>
                     <a href="1/index.html">#01</a></div></h6>
                 </div> 
                 
@@ -234,14 +293,18 @@
                     <div class="pp"><img src="trombi/matea.png"></div>
                     <div class="txt"><h5>Matéa Narcy</h5><h6>Canary Meat<br>Nectar Maya<br>Cayman Tear<br>Ant any Cream<br>Mary at Caen<br>Can Ray Mate ?
                     <br><br><i>A participé aux numéros :</i>
-                    <a href="0/index.html">#00</a></div></h6>
+                    <a href="0.2/index.html">#0.2</a>
+                    <a href="0.3/index.html">#0.3</a></div></h6>
                 </div>
 
                 <div class="tourbier">
                     <div class="pp"><img src="trombi/michel.png"></div>
                     <div class="txt"><h5>Michel Bringue</h5><h6>Partisan<br>Du moindre effort.
                     <br><br><i>A participé aux numéros :</i>
-                    <a href="0/index.html">#00</a>
+                    <a href="0.1/index.html">#0.1</a>
+                    <a href="0.2/index.html">#0.2</a>
+                    <a href="0.3/index.html">#0.3</a>
+                    <a href="0.5/index.html">#0.5</a>
                     <a href="1/index.html">#01</a>
                     <a href="2/index.html">#02</a>
                     <a href="3/index.html">#03</a>
@@ -282,7 +345,10 @@
                     <div class="pp"><img src="trombi/raphael.png"></div>
                     <div class="txt"><h5>Raphaël</h5><h6>Raphaël est né le 9 juin 1996 et est mort le 17 août 2051 comme tout le monde.
                     <br><br><i>A participé aux numéros :</i>
-                    <a href="0/index.html">#00</a>
+                    <a href="0.1/index.html">#0.1</a>
+                    <a href="0.2/index.html">#0.2</a>
+                    <a href="0.3/index.html">#0.3</a>
+                    <a href="0.5/index.html">#0.5</a>
                     <a href="1/index.html">#01</a>
                     <a href="2/index.html">#02</a>
                     <a href="4/index.html">#04</a>
@@ -293,7 +359,9 @@
                     <div class="pp"><img src="trombi/ro.png"></div>
                     <div class="txt"><h5>Ro</h5><h6>Professeur de Virtual Reality Phd - University of Kansas, USA<br>Cette mystérieuse amatrice de bichon maltais enseigne les années 2000 à l'école d'architecture de Paris.
                     <br><br><i>A participé aux numéros :</i>
-                    <a href="0/index.html">#00</a></div></h6>
+                    <a href="0.1/index.html">#0.1</a>
+                    <a href="0.2/index.html">#0.2</a>
+                    <a href="0.3/index.html">#0.3</a></div></h6>
                 </div> 
 
                 <div class="tourbier">
@@ -309,6 +377,13 @@
                     <br><br><i>A participé aux numéros :</i>
                     <a href="1/index.html">#01</a>
                     <a href="3/index.html">#03</a></div></h6>
+                </div>
+
+                <div class="tourbier">
+                    <div class="pp"><img src="trombi/tead.png"></div>
+                    <div class="txt"><h5>Tead</h5><h6>Ex-performer<br>Etre légendaire du folklore horreurgore coréen des années 80. Repenti, il se consacre désormais à l'étude mathématique des phénomènes sociaux via la théorie du chaos, ainsi qu'à la cueillette de champignons.
+                    <br><br><i>A participé aux numéros :</i>
+                    <a href="0.4/index.html">#0.4</a></div></h6>
                 </div>
 
                 <div class="tourbier">
@@ -363,6 +438,13 @@
                 </div>
 
                 <div class="tourbier">
+                    <div class="pp"><img src="trombi/yuxu.png"></div>
+                    <div class="txt"><h5>Yu Xu</h5><h6>Issu d'une recomposition des fragments de 4 étudiants en architecture (Alexandre, Daron, Lucien et Mathieu), Yu Xu serait un anachronète retiré à Da'an pour vivre de prière, de méditation et d'ascèse. Il est en fait envoyé spécial pour La Tourbe. Et une légende des renseignements français.
+                    <br><br><i>A participé aux numéros :</i>
+                    <a href="0.3/index.html">#0.3</a></div></h6>
+                </div>
+
+                <div class="tourbier">
                     <div class="pp"><img src="trombi/zadro.png"></div>
                     <div class="txt"><h5>Zadrot</h5><h6>François<br>Zadro est un penseur et amateur de bricolage à ses heures perdues. La planète où il vivait a disparu à cause de la consommation et de l'orgueil. Ému par la vie sensible de la planète Terre, il plaide pour que cela dure.
                     <br><br><i>A participé aux numéros :</i>
@@ -375,10 +457,6 @@
                     <br><br><i>A participé aux numéros :</i>
                     <a href="6/index.html">#06</a></div></h6>
                 </div>
-
-
-
-
 
             </div>
         </div>        
