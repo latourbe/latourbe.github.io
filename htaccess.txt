@@ -3,4 +3,4 @@ RewriteRule .* test.php
 RewriteCond %{REQUEST_FILENAME} !-f 
 RewriteCond %{REQUEST_FILENAME} !-d 
 RewriteRule ^([^/]+)/?$ $1.html [L] 
-ErrorDocument 404 /index.html
+ErrorDocument 404 /404.html
